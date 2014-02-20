@@ -1,9 +1,6 @@
-/* includes node_modules/govuk_frontend_toolkit/govuk_frontend_toolkit/stylesheets */
+/* includes nodemodules/govukfrontendtoolkit/govukfrontendtoolkit/stylesheets */
 
-@import '_colours';
-@import '_typography';
-@import 'design-patterns/_buttons';
-@import 'design-patterns/_alpha-beta';
+@import 'toolkit';
 
 #content {
 	margin: 0 auto;
@@ -13,3 +10,10 @@
     width: 990px;
   }
 }
+
+/* IER styles */
+
+@import 'core';
+@import 'questions';
+@import 'confirmation';
+@import 'complete';
