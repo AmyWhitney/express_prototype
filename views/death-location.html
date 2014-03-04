@@ -1,40 +1,32 @@
 <main id="content">
 
-      
-   
+  <form action="{{next}}">
+    <header class="question-one">
+     <h1>Where did the death happen?</h1>
+    </header>
 
-<form action="/address">
     
 
-    
-
-
- <a class="back-to-previous" href="/disability-allowance">Back <span class="visuallyhidden"> to the previous question</span></a> 
-
-<header>
-
-  <p>Question 2 of 3</p>
-  <h1>Did the person die at home, in hospital or elsewhere?</h1>
-</header>
-
-   <fieldset class="validate " data-validation-name="country" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="england scotland wales northernIreland britishIslands abroad">
+    <fieldset class="validate " data-validation-name="country" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="england scotland wales northernIreland britishIslands abroad">
 
         <label class="selectable">
-            <input type="radio" name="death_occur" value="home_or_hospital" class="radio">
-            At home or in hospital
+            <input type="radio" name="death_location" value="England or Wales" class="radio"{{choice_1}}>
+            England or Wales
         </label>
         <label class="selectable">
-            <input type="radio" name="death_occur" value="elsewhere" class="radio">
-            Elsewhere
+            <input type="radio" name="death_location" value="Scotland" class="radio"{{choice_2}}>
+            Scotland
         </label>
-    </fieldset>    
+         <label class="selectable">
+            <input type="radio" name="death_location" value="Northern Ireland" class="radio"{{choice_3}}>
+            Northern Ireland
+        </label>
+    </fieldset>
 
+    <button type="submit" id="continue" class="button next validation-submit" data-validation-sources="country">
+        Continue
+    </button>
 
-      </div>
-    </div>
-    <button type="submit" id="continue" class="button next validation-submit" data-validation-sources="nationality">Continue</button>
-    
-</form>
+  </form>
 
-
-    </main>
+ </main>

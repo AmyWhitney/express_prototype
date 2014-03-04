@@ -229,22 +229,6 @@ Example usage:
 }
 
 */
-
-
-
-.confirmation .bignumberintro {
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-.bignumber {
-  font-weight: 700;
-  font-size: 36px;
-  margin-top: 0;
-  padding-top: 0;
-}
-
-
 html {
   background-color: #DEE0E2; }
 
@@ -1946,3 +1930,52 @@ Example usage:
     .complete .email {
       background-size: 21px 16px;
       background-image: url('/assets/images/icon-email-2x.png'); } }
+
+.bignumber {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 0.5em; }
+
+.bignumberintro {
+  margin-bottom: 0;
+  margin-top: em; }
+
+.results-info {
+  margin-bottom: 4em; }
+
+.back-to-previous {
+  width: auto;
+  padding-left: 0; }
+
+article th {
+  line-height: 1.25em;
+  text-align: left;
+  color: #0b0c0c;
+  font-weight: 700;
+  background-color: #dee0e2;
+  border: solid 1px #a1acb2; }
+
+article table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: gray;
+  margin-bottom: 2em; }
+
+tr {
+  display: table-row;
+  vertical-align: top;
+  border-color: inherit; }
+
+th, td {
+  padding: 5px 10px; }
+
+article td {
+  background: #eaedef;
+  border: dotted 1px #b8c6cc; }
+
+article tr:nth-child(even) td {
+  background-color: #fff; }

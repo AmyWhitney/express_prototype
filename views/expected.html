@@ -1,0 +1,40 @@
+<main id="content">
+
+      
+   
+
+<form action="{{next}}">
+    
+
+    
+
+
+ <a class="back-to-previous" href="/death-occur">
+    <i class="fa fa-angle-left"></i>
+    Back <span class="visuallyhidden"> to the previous question</span>
+</a> 
+
+<header>
+  <h1>Was the death expected?</h1>
+</header>
+    
+
+    <fieldset class="validate " data-validation-name="country" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="england scotland wales northernIreland britishIslands abroad">
+
+        <label class="selectable">
+            <input type="radio" name="expected" value="Yes" class="radio"{{choice_1}}>
+            Yes
+        </label>
+        <label class="selectable">
+            <input type="radio" name="expected" value="No" class="radio"{{choice_2}}>
+            No
+        </label>
+    </fieldset>
+
+    <button type="submit" id="continue" class="button next validation-submit" data-validation-sources="country">
+        Continue
+    </button>
+
+  </form>
+
+ </main>
